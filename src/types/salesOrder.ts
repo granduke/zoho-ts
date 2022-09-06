@@ -30,13 +30,14 @@ export type CreateSalesOrder =
     /**
      * Required fields
      */
-    Pick<SalesOrder, "salesorder_number" | "customer_id"> &
+    Pick<SalesOrder, "customer_id"> &
         /**
          * Optional fields
          */
         Partial<
             Pick<
                 SalesOrder,
+                | "salesorder_number" 
                 | "adjustment_description"
                 | "adjustment"
                 | "contact_persons"
