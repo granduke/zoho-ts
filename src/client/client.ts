@@ -88,8 +88,8 @@ export class ZohoApiClient {
     private httpClient: AxiosInstance;
 
     static readonly BASE_URL = {
-        inventory: "https://inventory.zoho.eu/api/v1",
-        books: "https://books.zoho.eu/api/v3",
+        inventory: "https://inventory.zoho.com/api/v1",
+        books: "https://books.zoho.com/api/v3",
     };
 
     private constructor(config: ZohoApiClientConfig) {
@@ -114,7 +114,7 @@ export class ZohoApiClient {
         const clientCredentials = new ClientCredentials({
             client: config.client,
             auth: {
-                tokenHost: "https://accounts.zoho.eu",
+                tokenHost: "https://accounts.zoho.com",
                 tokenPath: "/oauth/v2/token",
             },
             options: {
