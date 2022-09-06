@@ -165,3 +165,16 @@ export type LineItem = {
      */
     [key: string]: unknown;
 };
+
+/**
+ * Create Line Items in Sales Order
+ */
+export type CreateLineItems = 
+    /**
+    * Required fields
+     */
+    Pick<LineItem, "item_id" | "rate" | "quantity" & 
+/**
+ * Optional Fields
+ */
+Partial<LineItem>>
