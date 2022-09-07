@@ -173,8 +173,8 @@ export type CreateLineItems =
     /**
     * Required fields
      */
-    Pick<LineItem, "item_id" | "rate" | "quantity" & 
+    Pick<LineItem, "item_id" | "rate" | "quantity"> & 
 /**
  * Optional Fields
  */
-Partial<LineItem>>
+Partial<LineItem>
