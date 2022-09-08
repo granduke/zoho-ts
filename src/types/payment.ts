@@ -10,7 +10,7 @@ export type Payment = {
      * Maximum length [100]
      * Get all methods by: https://inventory.zoho.eu/api/v1/meta/paymentmodes
      */
-    payment_mode: "braintree" | "paypal" | "banktransfer" | "Banküberweisung";
+    payment_mode: "shopify_payments" | "paypal" | "bogus";
 
     payment_number: string;
 
