@@ -24,7 +24,7 @@ export class SalesOrderHandler {
             path: ["salesorders"],
             body: salesOrder,
             params: {
-                ignore_auto_number_generation: true,
+                ignore_auto_number_generation: false,
             },
         });
 
