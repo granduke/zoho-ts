@@ -148,11 +148,7 @@ export type CreateContact =
                     | "shipping_address"
                 >
             >,
-        | "first_name"
-        | "last_name"
-        | "email"
-        | "billing_address"
-        | "shipping_address"
+        "first_name" | "last_name" | "billing_address" | "shipping_address"
     > & {
         billing_address?: CreateAddress;
         shipping_address?: CreateAddress;
