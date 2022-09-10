@@ -93,6 +93,11 @@ export type Contact = {
     place_of_contact: string;
 
     /**
+     * Boolean to track the taxability of the customer.
+     */
+    is_taxable: boolean;
+
+    /**
      * Name of the Tax Authority
      */
     tax_authority_name: string;
