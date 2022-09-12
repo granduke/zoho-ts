@@ -46,6 +46,11 @@ export type Payment = {
      */
     customer_id: string;
 
+    /**
+     * Customer Advance Payment Account.
+     */
+    customer_advance_account_id: string;
+
     created_time: string;
     last_modified_time: string;
 
@@ -106,7 +111,12 @@ export type ListPayment = Pick<
 
 export type CreatePayment = Pick<
     Payment,
-    "customer_id" | "payment_mode" | "amount" | "invoices" | "date"
+    | "customer_id"
+    | "customer_advance_account_id"
+    | "payment_mode"
+    | "amount"
+    | "invoices"
+    | "date"
 > &
     Partial<
         Pick<
