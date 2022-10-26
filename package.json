@@ -1,6 +1,6 @@
 {
-    "name": "@trieb.work/zoho-ts",
-    "version": "0.5.37",
+    "name": "@granduke/zoho-ts",
+    "version": "0.5.38",
     "description": "Node Library for Zoho Inventory and Zoho Books",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -9,7 +9,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/trieb-work/zoho-ts.git"
+        "url": "https://github.com/granduke/zoho-ts.git"
     },
     "author": "Jannik Zinkl | trieb.work",
     "license": "MIT",
@@ -62,15 +62,16 @@
         "babel-jest": "^27.0.6",
         "commitlint": "^16.2.4",
         "dotenv": "^8.2.0",
-        "eslint": "^8.15.0",
+        "eslint": "^7.23.0",
         "husky": "^8.0.1",
-        "jest": "^27.0.6",
+        "jest": "^>=26 <27",
         "lint-staged": "^12.4.1",
         "prettier": "^2.6.2",
         "rimraf": "^3.0.2",
-        "ts-jest": "^27.0.4",
+        "ts-jest": "^26.0.24",
         "ts-node": "^9.1.1",
         "typedoc": "^0.22.17",
-        "typescript": "^4.6.4"
+        "typescript": "^4.6.4",
+        "yarn": "^1.22.19"
     }
 }
