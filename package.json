@@ -1,7 +1,7 @@
 {
-    "name": "@trieb.work/zoho-ts",
-    "version": "0.6.2",
-    "description": "Node Library for Zoho Inventory, Invoice and Zoho Books",
+    "name": "@granduke/zoho-ts",
+    "version": "0.5.38",
+    "description": "Node Library for Zoho Inventory and Zoho Books",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "files": [
@@ -9,7 +9,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/trieb-work/zoho-ts.git"
+        "url": "https://github.com/granduke/zoho-ts.git"
     },
     "author": "Jannik Zinkl | trieb.work",
     "license": "MIT",
