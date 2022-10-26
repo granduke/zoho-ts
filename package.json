@@ -22,7 +22,7 @@
     "scripts": {
         "build": "tsc",
         "dev": "yarn tsc --watch --preserveWatchOutput",
-        "prepublish": "yarn build",
+        "prepublish": "npm run build",
         "format": "prettier --write .",
         "fmt": "yarn lint && yarn format",
         "lint": "eslint . --ext ts --ext tsx --ext js --fix",
