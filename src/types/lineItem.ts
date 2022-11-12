@@ -178,3 +178,8 @@ export type CreateLineItems =
  * Optional Fields
  */
 Partial<LineItem>
+/**
+ * Create Shipment Line Item in Sales Order
+ */
+ export declare type CreateShipLineItem = Pick<LineItem, "rate" | "description">;
+ 
