@@ -181,5 +181,5 @@ Partial<LineItem>
 /**
  * Create Shipment Line Item in Sales Order
  */
- export declare type CreateShipLineItem = Pick<LineItem, "rate" | "description">;
+ export declare type CreateShipLineItem = Pick<LineItem, "name" | "rate" | "description">;
  
