@@ -1,6 +1,6 @@
 import type { AddressWithoutAddressId } from "./address";
 import type { Document } from "./document";
-import type { LineItem, CreateShipLineItem } from "./lineItem";
+import type { LineItem, CreateLineItems, CreateShipLineItem } from "./lineItem";
 import type { PackageShortList } from "./package";
 import type { Invoice } from "./invoice";
 import type { CustomField } from "./customField";
@@ -65,8 +65,7 @@ export type CreateSalesOrder =
         > & /**
          * Additional fields
          */ {
-            line_items: (Pick<LineItem, "item_id" | "quantity"> &
-                Partial<LineItem>) | CreateShipLineItem[];
+            line_items: Array<CreateLineItems | CreateShipLineItem>;
 
             custom_fields?: CustomField[];
 
