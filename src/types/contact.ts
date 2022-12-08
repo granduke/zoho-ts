@@ -157,6 +157,7 @@ export type CreateContact =
     > & {
         billing_address?: CreateAddress;
         shipping_address?: CreateAddress;
+        avatax_use_code? : string;
     };
 
 export type UpdateContact =
