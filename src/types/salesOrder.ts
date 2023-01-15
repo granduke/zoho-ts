@@ -40,6 +40,8 @@ export type CreateSalesOrder =
                 | "salesorder_number" 
                 | "adjustment_description"
                 | "adjustment"
+                | "avatax_use_code"
+                | "avatax_exempt_no"
                 | "contact_persons"
                 | "date"
                 | "delivery_method"
@@ -280,6 +282,12 @@ export type SalesOrder = {
         tax_amount: number;
         tax_name: string;
     }[];
+
+    /**
+     * Avalara Tax Codes for tax exemption.
+     */
+    avatax_use_code?: string;
+    avatax_exempt_no?: string;
 
     /**
      * The precision level for the price's decimal point in a Sales Order.
