@@ -74,6 +74,10 @@ export type LineItem = {
      * Name of the tax applied on the line item.
      */
     tax_name: string;
+    /**
+     * Name of the avatax code applied on the line item.
+     */
+    avatax_tax_code?: string;
 
     /**
      * Denotes the type of the tax. This can either be a single tax or a tax group.
@@ -181,5 +185,5 @@ Partial<LineItem>
 /**
  * Create Shipment Line Item in Sales Order
  */
- export declare type CreateShipLineItem = Pick<LineItem, "name" | "rate" | "description">;
+ export declare type CreateShipLineItem = Pick<LineItem, "name" | "rate" | "description" | "avatax_tax_code">;
  
