@@ -1,6 +1,7 @@
 import { Address } from ".";
 import { CreateAddress } from "./address";
 import { ContactPersonFromContactGet } from "./contactPerson";
+import { CustomField } from "./customField";
 
 export type Contact = {
     /**
@@ -133,6 +134,11 @@ export type Contact = {
     last_modified_time: string;
 
     created_time: string;
+
+     /**
+     * Optional Custom Fields for customer specific data
+     */
+    custom_fields?: CustomField[];
 };
 
 export type CreateContact =
@@ -158,6 +164,7 @@ export type CreateContact =
         billing_address?: CreateAddress;
         shipping_address?: CreateAddress;
         avatax_use_code? : string;
+        custom_fields: CustomField[];
     };
 
 export type UpdateContact =
@@ -168,7 +175,7 @@ export type UpdateContact =
         /**
          * Optional fields
          */
-        Partial<Pick<Contact, "company_name">>;
+        Partial<Pick<Contact, "company_name" | "custom_fields">>;
 
 export interface GetContact extends Contact {
     contact_persons: ContactPersonFromContactGet[];
