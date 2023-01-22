@@ -164,6 +164,7 @@ export type CreateContact =
         billing_address?: CreateAddress;
         shipping_address?: CreateAddress;
         avatax_use_code? : string;
+        avatax_exempt_no? : string;
         custom_fields: CustomField[];
     };
 
