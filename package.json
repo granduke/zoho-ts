@@ -26,10 +26,10 @@
     ],
     "scripts": {
         "build": "tsc",
-        "dev": "pnpm tsc --watch --preserveWatchOutput",
-        "prepublish": "pnpm build",
+        "dev": "npm tsc --watch --preserveWatchOutput",
+        "prepublish": "npm run build",
         "format": "prettier --write .",
-        "fmt": "pnpm lint && pnpm format",
+        "fmt": "npm lint && npm format",
         "lint": "eslint . --ext ts --ext tsx --ext js --fix",
         "test": "jest"
     },
