@@ -1,5 +1,5 @@
-import { ZohoApiClient } from "src/client/client";
-import { Organization } from "src/types/organizations";
+import { ZohoApiClient } from "../client/client";
+import { Organization } from "../types/organizations";
 
 export class OrganizationHandler {
     private client: ZohoApiClient;
